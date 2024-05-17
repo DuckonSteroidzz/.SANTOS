@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bungee+Shade&family=Butcherman&family=Damion&family=Lobster&family=Mohave:wght@300;400&family=Montserrat:wght@100;400&family=Press+Start+2P&family=Sedgwick+Ave+Display&family=Teko:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+    <header>
+    <a href="index.html" class="logo">Potio Taberna</a>
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="store.html">Products</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Index.html"><i class="fas fa-user"></i></a>
+        <a href="store.html" class="Shopping"><i class="fas fa-shopping-cart"></i></a>
+    </nav>
+    </header>
+    <div class="wrapping">
+        <aside>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.9340532754186!2d120.94876231057907!3d14.659683885774603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b4525b4b2cbf%3A0x4ad6de6c8fa695a5!2s3%20Matahong%20St%2C%20Malabon%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1715357025104!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+        <!--CONTACT-->
+        <section class="contact" id="contact">
+            <h1 class="heading"> Contact Us </h1>
+            <div class="row">
+                <form action="" onsubmit="return showAlert()">
+                    <div class="form_container">
+                    <input type="text"placeholder="name"class="box" required>
+                    <input type="email"placeholder="email"class="box" required>
+                    <input type="number"placeholder="number"class="box" required>
+                    <textarea name=""class="box"placeholder="message"id=""cols="30"rows="10"></textarea>
+                    </div>
+                    <div class="btn">
+                        <input type="image" src="Submit.png" alt="Submit" class="btn">
+                    </div>
+                </form>
+                <script>
+                    function showAlert() {
+                        alert("Message Sent");
+                        return false;
+                    }
+                </script>
+            </div>
+        </section>
+    </div>
+    
+    <!--FOOTER-->
+    <footer>
+    <div class="foot_container">
+        <div class="icons">
+            <a href="https://www.facebook.com/TheJanSan"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/disyembreart/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/DisyembreArt"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UC4U1FeopureWoMUrrnMyQug"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="store.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="Copyright">
+        <p>Copyright &copy;2024 Designed by <span class="Santos">Santos</span></p>
+    </div>
+    </footer>
+    <script>
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+    
+        let username = localStorage.getItem('username');
+        if (!username) {
+            username = 'Player';
+        }
+        document.getElementById('username').textContent = capitalizeFirstLetter(username);
+        localStorage.removeItem('username'); // Remove the username from local storage after displaying the message
+    </script>
+    <script src="cart.js"></script>
+    </body>
+</html>

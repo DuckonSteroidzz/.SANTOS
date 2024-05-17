@@ -1,0 +1,138 @@
+body {
+background-color: black;
+}
+*{     margin:0; padding:0;
+    transition:.2s linear;
+    text-decoration: none;
+}
+.cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("startbg.gif");
+    background-size: cover;
+    overflow: hidden;
+}
+h1{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(70, 8, 8, 0.995);
+}
+article{
+    margin-top: -20px;
+}
+
+section {
+    padding-bottom: 2%;
+    margin-bottom: 2px;
+}
+
+
+.img_position {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    height: 100vh; 
+}
+
+.img_position a {
+    position: absolute;
+    bottom: 25rem; 
+    transition-duration: 0.8s;
+}
+a:hover{
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+}
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; 
+    padding: 30px;
+    border:1rem solid rgba(91, 64, 64, 0.532);
+    background: rgba(255, 255, 255, 0.508);
+    border-radius: .5rem;
+}
+#username,
+#password {
+    text-align: center;
+}
+
+#username, #password, button {
+    width: 100%; 
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2rem;
+    width: 310px;
+    background-color: #775a5ac6;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover {
+    color: black;
+    background-color: #997777be;
+}
+
+a.logo {
+    margin-top: 20px;
+}
+/*FOOTER*/
+footer{
+
+    width:100%;
+    padding: 70px 30px 20px;
+    background-color: black;
+        
+    box-sizing:border-box;
+    outline:none; border:none;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons a{
+    color:white;
+    margin:1rem 1rem;
+    background-color: black;
+    border-radius:65%;
+    padding:0.5rem;
+    font-size: 1.5rem;
+}
+.icons a:hover{
+    color:black;
+    background-color: rgba(5, 5, 5, 0);
+}
+.foot_container ul{
+    display: flex;
+    justify-content: center;
+}
+.foot_container ul li a{
+    text-decoration: none;
+    color:white;
+    margin:1rem 2rem;
+    font-size:1.5rem;
+}
+.foot_container ul li a:hover{
+    color:black;
+}
+.Copyright{
+    padding-top:2rem;
+    display: flex;
+    justify-content: center;
+    color:white;
+    width:100%;
+    font-weight: 1rem;
+}

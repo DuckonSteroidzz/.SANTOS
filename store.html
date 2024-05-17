@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="store.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bungee+Shade&family=Butcherman&family=Damion&family=Lobster&family=Mohave:wght@300;400&family=Montserrat:wght@100;400&family=Press+Start+2P&family=Sedgwick+Ave+Display&family=Teko:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+    <header>
+    <a href="index.html" class="logo">Potio Taberna</a>
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="home.html">About</a>
+        <a href="">Products</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Index.html"><i class="fas fa-user"></i></a>
+        <a class="Shopping"><i class="fas fa-shopping-cart"></i></a>
+    </nav>
+    </header>
+    <!-- STORE -->
+    <section class = "shop" id="shop">
+       <div class="container">
+        <div class="card">
+            <img src="Potion of Healing.png">
+            <div class="desc" onclick="addToCart('Healing Potion')">
+                <h1>Healing Potion</h1>
+                <p>A draught for curing minor cuts and bruises.</p>
+                <h5><b>Add to Cart</b>  |  20gol</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Mana Potion.png">
+            <div class="desc" onclick="addToCart('Mana Potion')">
+                <h1>Mana Potion</h1>
+                <p>A mystical elixir brewed from rare ingredients, replenishes a mage's magical energy, allowing them to cast powerful spells.</p>
+                <h5><b>Add to Cart</b>  |  20gol</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Hi-Potion.png">
+            <div class="desc" onclick="addToCart('Hi-Potion')">
+                <h1>Hi-Potion</h1>
+                <p>A potent concoction crafted by skilled alchemists, instantly restores a warrior's health, mending wounds and revitalizing them for battle.</p>
+                <h5><b>Add to Cart</b>  |  40gol</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Potion of Speed.png">
+            <div class="desc" onclick="addToCart('Speed Potion')">
+                <h1>Potion of Speed</h1>
+                <p>This solution ripples and splashes of its own accord, almost like it's trying to escape the bottle.</p>
+                <h5><b>Add to Cart</b>  |  40gol</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Elixir of Hill Giant Strength.png">
+            <div class="desc" onclick="addToCart('Hill Giant Strength')">
+                <h1>Hill Giant Strength</h1>
+                <p>A sliver of a hill giant's fingernail is suspended in this potion, and the foul stench renders it unpleasant to swallow.</p>
+                <h5><b>Add to Cart</b>  |  60gol</h5>
+            </div>
+        </div>
+       </div>
+    </section>
+        <!-- CHECKOUT-->
+        <div class="Cart">
+            <div class="CartTitle">
+                <h1><center>Add to Cart</center></h1>
+            </div>
+            <ul class="ProductList"></ul>
+            <div class="CheckOut">
+                <div class="total">0</div>
+                <div class="Confirm">Confirm</div>
+                <div class="CloseShopping">Close</div>
+            </div>
+        </div>
+        
+        <!--FOOTER-->
+    <div class="foot_container">
+        <div class="icons">
+            <a href="https://www.facebook.com/TheJanSan"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/disyembreart/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/DisyembreArt"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UC4U1FeopureWoMUrrnMyQug"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="shop.html">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="Copyright">
+        <p>Copyright &copy;2024 Designed by <span class="Santos">Santos</span></p>
+    </div>
+    </footer>
+    <script src="cart.js"></script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bungee+Shade&family=Butcherman&family=Damion&family=Lobster&family=Mohave:wght@300;400&family=Montserrat:wght@100;400&family=Press+Start+2P&family=Sedgwick+Ave+Display&family=Teko:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+        <div class="cover">
+        <section>
+            <h1>Potio Taberna</h1>
+        </section>
+        <article>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="username" required>
+                <input type="password" id="password" name="password" placeholder="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </article>
+    </div>
+        <!--FOOTER-->
+<div class="foot_container">
+    <div class="icons">
+        <a href="https://www.facebook.com/TheJanSan"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/disyembreart/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/DisyembreArt"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UC4U1FeopureWoMUrrnMyQug"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="store.html">Products</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="Copyright">
+    <p>Copyright &copy;2024 Designed by <span class="Santos">Santos</span></p>
+</div>
+</footer>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            let username = document.getElementById('username').value;
+            localStorage.setItem('username', username);
+            window.location.href = 'home.html';
+        });
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,252 @@
+
+/*END same code*/
+*{
+    margin:0; padding:0;
+    box-sizing:border-box;
+    outline:none; border:none;
+    transition:.2s linear;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top:6rem;
+    overflow-x:hidden;
+    background-color: black;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.759);
+    padding:1.5rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1;
+    box-shadow: 0 .5rem 1rem black;
+}
+header .logo{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(19, 11, 82, 0.995);
+}
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#2b2d3b;
+}
+header .navbar a:hover{
+    color:#743c3c;
+}
+/*END same code*/
+/*HOME*/
+section{
+    padding:2rem 9%;
+}
+
+.shop{
+    display: flex;
+    padding-top: 10%;
+    min-height:100vh;
+    background-image: url("homebg.png"); 
+    background-size: cover;
+    background-position: center;
+}
+/*ITEMS*/
+.shop .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+.card{
+    height:400px;width: 230px;
+    border-radius: 5px;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.375);
+    overflow:hidden;
+}
+
+img{
+    height:400px;
+    width: 230px;
+    border-radius: 5px;
+}
+.container .desc{
+    height:100px; width: 230px;
+    padding:6px;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 5px;
+    background-color: black;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.375);
+    bottom: 140px;
+    color:white;
+}
+h1{
+    font-family: "Press Start 2P", system-ui;
+    margin:10px;
+    line-height: 1.2;
+    font-size:1rem;
+}
+p{
+    font-size:1rem;
+    margin:10px;
+    line-height: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.desc h5{
+    font-size:1rem;
+    margin:10px;
+    line-height: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover h5{
+    visibility: visible;
+    opacity: 1;
+}
+.card:hover .desc{
+    height:200px; width: 230px;
+    background: black;
+}
+.card:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+/* Shopping cart */
+.Cart {
+    position: fixed;
+    top: 0;
+    left:100%;
+    width: 500px;
+    height: 100vh;
+    background-color: #2b2d3b;
+    z-index: 1;
+}
+
+.Cart .CheckOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+}
+.total {
+    color: white;
+    font-size: 1.5rem;
+}
+.CartTitle{
+    background-color: black; width:100%;
+    padding:2.9%;
+}
+.CartTitle h1{
+   
+    color:white;
+    padding-left:10px;
+    font-size:2rem;
+}
+.Confirm{
+    color: white;
+    font-size: 1.5rem;
+}
+.CloseShopping{
+    color:white;
+    font-size: 1.5rem;
+}
+.Cart .CheckOut div {
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Active state */
+.Shopping:hover + .Cart {
+    left: calc(100% - 500px);
+}
+
+.active .Cart {
+    transform: translateX(-500px);
+}
+/*Javascript edit*/
+
+
+.ProductList li {
+    list-style-type: none;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProductList span,
+.ProductList button {
+  
+    align-items: center; 
+    padding: 5px;
+    width: 100px;
+    text-align: center; 
+}
+.ProductList span{
+    width: 100px;
+}
+.ProductList button{
+    background-color: grey;
+    width: 50px;
+}
+/*FOOTER*/
+footer{
+    width:100%;
+    padding: 70px 30px 20px;
+    background-image:URL('homebg.png');
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons a{
+    color:white;
+    margin:1rem 1rem;
+    background-color: black;
+    border-radius:65%;
+    padding:0.5rem;
+    font-size: 1.5rem;
+}
+.icons a:hover{
+    color:black;
+    background-color: rgba(5, 5, 5, 0);
+}
+.foot_container ul{
+    display: flex;
+    justify-content: center;
+}
+.foot_container ul li a{
+    text-decoration: none;
+    color:white;
+    margin:1rem 2rem;
+    font-size:1.5rem;
+}
+.foot_container ul li a:hover{
+    color:black;
+}
+.Copyright{
+    padding-top:2rem;
+    display: flex;
+    justify-content: center;
+    color:white;
+    width:100%;
+    font-weight: 1rem;
+}
