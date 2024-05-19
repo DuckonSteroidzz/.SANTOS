@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Store Potion Taberna</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="store.css">
@@ -22,11 +22,11 @@
         <a href="home.html">About</a>
         <a href="">Products</a>
         <a href="Contact.html">Contact</a>
-        <a href="index.html"><i class="fas fa-user"></i></a>
+        <a href="Index.html"><i class="fas fa-user"></i></a>
         <a class="Shopping"><i class="fas fa-shopping-cart"></i></a>
     </nav>
     </header>
-       <!-- STORE -->
+    <!-- STORE -->
     <section class = "shop" id="shop">
        <div class="container">
         <table>
@@ -41,7 +41,7 @@
         <tr>
         <td> 
         <div class="card">
-            <img src="Potion of Healing.png" alt="Potion of Healing">
+            <img src="Potion of Healing.png">
             <div class="desc" onclick="addToCart('Healing Potion')">
                 <h1>Healing Potion</h1>
                 <p>A draught for curing minor cuts and bruises.</p>
@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="Elixir of Hill Giant Strength.png">
+            <img src="Elixir of Hill Giant Strength.png" alt="Elixir of Hill Giant Strength">
             <div class="desc" onclick="addToCart('Hill Giant Strength')">
                 <h1>Hill Giant Strength</h1>
                 <p>A sliver of a hill giant's fingernail is suspended in this potion, and the foul stench renders it unpleasant to swallow.</p>
@@ -86,6 +86,18 @@
        </div>
     
     </section>
+        <!-- CHECKOUT-->
+        <div class="Cart">
+            <div class="CartTitle">
+                <h1><center>Add to Cart</center></h1>
+            </div>
+            <ul class="ProductList"></ul>
+            <div class="CheckOut">
+                <div class="total">0</div>
+                <div class="Confirm">Confirm</div>
+                <div class="CloseShopping">Close</div>
+            </div>
+        </div>
         
         <!--FOOTER-->
     <div class="foot_container">
@@ -110,4 +122,5 @@
     </footer>
     <script src="cart.js"></script>
     </body>
+  
 </html>
