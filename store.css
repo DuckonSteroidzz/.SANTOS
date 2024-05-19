@@ -59,51 +59,73 @@ section{
     flex-wrap: wrap;
     gap: 15px; 
 }
-.card{
-    height:400px;width: 230px;
+.card {
     border-radius: 5px;
     box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.375);
-    overflow:hidden;
+    margin: 5px;
+    overflow: hidden;
+    display: inline-block;  /* Ensures the cards are displayed inline */
+    box-sizing: border-box; /* Ensures padding and border are included in the height and width */
+    vertical-align: top;    /* Aligns the cards to the top */
+    text-align: center;     /* Centers the text within the card */
+    position: relative;     /* Allows the description to be positioned absolutely within the card */
 }
-
-img{
-    height:400px;
+.card img {
+    height: 400px;
     width: 230px;
     border-radius: 5px;
 }
-.container .desc{
-    height:100px; width: 230px;
-    padding:6px;
+
+.card .desc {
+    height: 100px;
+    width: 230px;
+    padding: 6px;
     box-sizing: border-box;
     position: absolute;
     border-radius: 5px;
     background-color: black;
     box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.375);
-    bottom: 140px;
-    color:white;
+    bottom: 0;  /* Positions the description container at the bottom of the card */
+    color: white;
 }
-h1{
+
+h1 {
     font-family: "Press Start 2P", system-ui;
-    margin:10px;
+    margin: 10px;
     line-height: 1.2;
-    font-size:1rem;
+    font-size: 1rem;
 }
-p{
-    font-size:1rem;
-    margin:10px;
+
+p {
+    font-size: 1rem;
+    margin: 10px;
     line-height: 1;
     visibility: hidden;
     opacity: 0;
 }
-.card:hover{
-    cursor: pointer;
-}
-.desc h5{
-    font-size:1rem;
-    margin:10px;
+
+.desc h5 {
+    font-size: 1rem;
+    margin: 10px;
     line-height: 1;
     visibility: hidden;
     opacity: 0;
+}
+
+.card .desc.show {
+    height: 200px;
+    width: 230px;
+    background: black;
+}
+
+.card .desc.show p,
+.card .desc.show h5 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card img.show {
+    transform: scale(1.1) rotate(-3deg);
 }
 .card:hover h5{
     visibility: visible;
@@ -206,6 +228,40 @@ p{
 .ProductList button{
     background-color: grey;
     width: 50px;
+}
+/*SEARCH*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+}
+
+.search-bar button i {
+    font-size: 16px;
 }
 /*FOOTER*/
 footer{
