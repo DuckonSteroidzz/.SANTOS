@@ -14,12 +14,11 @@ function searchProducts() {
             card.classList.add('show'); 
             card.style.visibility = 'visible'; 
         } else {
-            card.classList.remove('show'); 
+            card.classList.remove('show');
             card.style.visibility = 'hidden'; 
         }
     });
 }
-
 OpenShopping.addEventListener('mouseenter', () => {
     body.classList.add('active');
 });
@@ -81,10 +80,10 @@ function removeFromCart(productName) {
 function updateCart() {
     ProductList.innerHTML = '';
     total = 0;
-    let totalItems = 0; 
+    let totalItems = 0; // Counter for total items in the cart
 
     for (let item in cartItems) {
-        totalItems += cartItems[item].quantity; 
+        totalItems += cartItems[item].quantity; // Increment the total items counter
         total += cartItems[item].price * cartItems[item].quantity;
         let listItem = document.createElement('li');
         listItem.innerHTML = `
@@ -96,6 +95,8 @@ function updateCart() {
         `;
         ProductList.appendChild(listItem);
     }
+
+    // Update the cart counter text
     let cartCounter = document.querySelector('.cart-counter');
     if (!cartCounter) {
         cartCounter = document.createElement('span');
@@ -118,6 +119,10 @@ document.querySelector('.Confirm').addEventListener('click', () => {
         }
     }
 });
+
+
+
+
 
 
 
