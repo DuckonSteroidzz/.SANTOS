@@ -64,11 +64,11 @@ section{
     box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.375);
     margin: 5px;
     overflow: hidden;
-    display: inline-block;  /* Ensures the cards are displayed inline */
-    box-sizing: border-box; /* Ensures padding and border are included in the height and width */
-    vertical-align: top;    /* Aligns the cards to the top */
-    text-align: center;     /* Centers the text within the card */
-    position: relative;     /* Allows the description to be positioned absolutely within the card */
+    display: inline-block; 
+    box-sizing: border-box; 
+    vertical-align: top;    
+    text-align: center;   
+    position: relative;   
 }
 .card img {
     height: 400px;
@@ -85,7 +85,7 @@ section{
     border-radius: 5px;
     background-color: black;
     box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.375);
-    bottom: 0;  /* Positions the description container at the bottom of the card */
+    bottom: 0; 
     color: white;
 }
 
