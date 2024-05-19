@@ -4,7 +4,21 @@ let CloseShopping = document.querySelector('.CloseShopping');
 let ProductList = document.querySelector('.ProductList');
 let cartTotal = document.querySelector('.total');
 let total = 0;
-
+function searchProducts() {
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+        const title = card.querySelector('h1').innerText.toLowerCase();
+        if (title.includes(searchQuery)) {
+            card.classList.add('show'); // Add the 'show' class to apply the hover effect
+            card.style.visibility = 'visible'; // Make the card visible
+        } else {
+            card.classList.remove('show'); // Remove the 'show' class
+            card.style.visibility = 'hidden'; // Hide the card
+        }
+    });
+}
 
 OpenShopping.addEventListener('mouseenter', () => {
     body.classList.add('active');
