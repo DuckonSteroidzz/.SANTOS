@@ -11,11 +11,11 @@ function searchProducts() {
     cards.forEach(card => {
         const title = card.querySelector('h1').innerText.toLowerCase();
         if (title.includes(searchQuery)) {
-            card.classList.add('show'); // Add the 'show' class to apply the hover effect
-            card.style.visibility = 'visible'; // Make the card visible
+            card.classList.add('show'); 
+            card.style.visibility = 'visible'; 
         } else {
-            card.classList.remove('show'); // Remove the 'show' class
-            card.style.visibility = 'hidden'; // Hide the card
+            card.classList.remove('show'); 
+            card.style.visibility = 'hidden'; 
         }
     });
 }
@@ -81,7 +81,10 @@ function removeFromCart(productName) {
 function updateCart() {
     ProductList.innerHTML = '';
     total = 0;
+    let totalItems = 0; 
+
     for (let item in cartItems) {
+        totalItems += cartItems[item].quantity; 
         total += cartItems[item].price * cartItems[item].quantity;
         let listItem = document.createElement('li');
         listItem.innerHTML = `
@@ -93,6 +96,14 @@ function updateCart() {
         `;
         ProductList.appendChild(listItem);
     }
+    let cartCounter = document.querySelector('.cart-counter');
+    if (!cartCounter) {
+        cartCounter = document.createElement('span');
+        cartCounter.classList.add('cart-counter');
+        OpenShopping.appendChild(cartCounter);
+    }
+    cartCounter.textContent = totalItems;
+
     cartTotal.textContent = total;
 }
 
