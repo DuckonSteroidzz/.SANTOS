@@ -26,9 +26,20 @@
         <a class="Shopping"><i class="fas fa-shopping-cart"></i></a>
     </nav>
     </header>
-    <!-- STORE -->
+       <!-- STORE -->
     <section class = "shop" id="shop">
        <div class="container">
+        <table>
+        <tr> 
+            <td>    
+            <form class="search-bar">
+            <input type="text" placeholder="Search for products..." id="searchInput">
+            <button type="button" onclick="searchProducts()"><i class="fa fa-search"></i></button>
+            </form>
+            </td>
+        </tr>
+        <tr>
+        <td> 
         <div class="card">
             <img src="Potion of Healing.png" alt="Potion of Healing">
             <div class="desc" onclick="addToCart('Healing Potion')">
@@ -62,27 +73,19 @@
             </div>
         </div>
         <div class="card">
-            <img src="Elixir of Hill Giant Strength.png" alt="Hill of Giant Strength">
+            <img src="Elixir of Hill Giant Strength.png">
             <div class="desc" onclick="addToCart('Hill Giant Strength')">
                 <h1>Hill Giant Strength</h1>
                 <p>A sliver of a hill giant's fingernail is suspended in this potion, and the foul stench renders it unpleasant to swallow.</p>
                 <h5><b>Add to Cart</b>  |  60gol</h5>
             </div>
+        </td>
+    </tr>
         </div>
+       </table>
        </div>
+    
     </section>
-        <!-- CHECKOUT-->
-        <div class="Cart">
-            <div class="CartTitle">
-                <h1><center>Add to Cart</center></h1>
-            </div>
-            <ul class="ProductList"></ul>
-            <div class="CheckOut">
-                <div class="total">0</div>
-                <div class="Confirm">Confirm</div>
-                <div class="CloseShopping">Close</div>
-            </div>
-        </div>
         
         <!--FOOTER-->
     <div class="foot_container">
